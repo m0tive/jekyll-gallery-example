@@ -1,0 +1,9 @@
+---
+---
+Jekyll Gallery plugin example site
+
+<p>
+
+{% for page in site.gallery_old_first limit:1 %}
+<a href="{{ page.url }}">View Gallery</a>
+{% endfor %}
