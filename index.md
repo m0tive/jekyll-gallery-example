@@ -1,9 +1,17 @@
 ---
+layout: base
 ---
-<p>Jekyll Gallery plugin example site
 
-<p>This site was generated from source located at: <a href="https://github.com/m0tive/jekyll-gallery-example">https://github.com/m0tive/jekyll-gallery-example</a>
+{{ site.title }}
+================
+
+This is an example of how the [Jekyll Gallery plugin][1] can be used to create
+navigable galleries from a set of images. The source that generated this site
+can be found on [github][2].
 
 {% for page in site.gallery_old_first limit:1 %}
-<p><a href="{{ site.base_url }}{{ page.url }}">View Gallery</a>
+[View Gallery]({{ site.base_url }}{{ page.url }})
 {% endfor %}
+
+[1]:https://github.com/m0tive/jekyll-gallery
+[2]:https://github.com/m0tive/jekyll-gallery-example

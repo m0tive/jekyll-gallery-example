@@ -1,2 +1,4 @@
-#base_url: /jekyll-gallery-example
+base_url: /jekyll-gallery-example
 exclude: README.md
+author: Peter Dodds
+title: Jekyll Gallery Example
