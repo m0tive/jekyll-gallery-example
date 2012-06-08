@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>     <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>        <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>        <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>        <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<head>
+{% include head-meta.html %}
+{% include head-link.html %}
+</head>
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <body> <!--<![endif]-->
+
+<!-- errors:
+{% unless site.url %}missing site.url{% endunless %}
+{% unless site.title %}missing site.title{% endunless %}
+{% unless site.author %}missing site.author{% endunless %}
+{% unless site.email %}missing site.email{% endunless %}
+     /errors -->
+<div id="container">
+{{ content | replace:'&#8230;','<span class="hellip">&#8230;</span>'}}
+</div> <!-- /#container -->
+
+{% for js in site.js %}<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+{% endfor %}{% for js in page.js %}<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+{% endfor %}
+{% include analytics.html %}

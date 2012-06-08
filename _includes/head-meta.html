@@ -1,0 +1,11 @@
+    <meta charset="utf-8" />
+
+    {% unless site.title %}<!-- error: missing site.title -->{% endunless %}
+    <title>{% if site.title %}{% if page.title %}{{ page.title | downcase }} | {% endif %}{{ site.title }}{% endif %}</title>
+
+    {% if site.title %}<meta name="title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />{% endif %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}" />{% else %}<!-- warning: no page.description -->{% endif %}
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% else %}<!-- warning: no page.robots -->{% endif %}
+
+    {% if site.author %}<meta name="author" content="{{ site.author }}" />{% else %}<!-- warning: no site.author -->{% endif %}
+    {% if site.copyright %}<meta name="Copyright" content="{{ site.time | date: "%Y" }} {{ site.copyright }}" />{% else %}<!-- warning: no site.copyright -->{% endif %}

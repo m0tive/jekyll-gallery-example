@@ -1,0 +1,8 @@
+    <link rel="canonical" href="{{ page.url | canonical }}" />
+
+    <link rel="stylesheet" href="/css/base.css" type="text/css" />
+    {% if page.css %}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" />{% endif %}
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ site.url }}/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/rss.xml" />
