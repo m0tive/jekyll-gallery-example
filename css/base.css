@@ -37,6 +37,16 @@ p code { font-size: 0.9em; padding:2px 1px; background: #eee; border: 1px solid 
 /* site-specific styles *
  * **********************************************************************/
 
+#start { text-align: center }
+#start a {
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 1em;
+    margin: 2em
+}
+
+#start a:hover { border-color: #333 }
+
 #image {
     background: #333;
     padding: 1em;
