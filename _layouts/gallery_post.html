@@ -1,20 +1,34 @@
-<p>
-{% if page.previous %}
-    <a href="{{ site.base_url }}{{ page.previous.url }}">previous</a>
-{% else %}
-    previous
-{% endif %}
+---
+layout: base
+---
+<h1>{{ page.title }}</h1>
 
-{% if page.next %}
-    <a href="{{ site.base_url }}{{ page.next.url }}">next</a>
-{% else %}
-    next
-{% endif %}
+<p id="nav" class="clearfix">
 
-<h2>{{ page.title }}</h2>
+    <span id="previous" class="button">
+    {% if page.previous %}
+        <a href="{{ site.base_url }}{{ page.previous.url }}">Previous</a>
+    {% else %}
+        <span class="disabled">Previous</span>
+    {% endif %}
+    </span>
 
-<p><img src="{{ site.base_url }}{{ page.image }}"></img>
+    <span id="home" class="button">
+        <a href="{{ site.base_url }}/">Home</a>
+    </span>
+
+    <span id="next" class="button">
+    {% if page.next %}
+        <a href="{{ site.base_url }}{{ page.next.url }}">Next</a>
+    {% else %}
+        <span class="disabled">Next</span>
+    {% endif %}
+    <span id="previous-button">
+
+<p id="image"><img src="{{ site.base_url }}{{ page.image }}"></img>
+
+<p id="date">Photo taken: {{ page.date | date_to_long_string }}
 
 {% if page.image_info %}
-    <p>{{ page.image_info }}
+    <p id="info">{{ page.image_info }}
 {% endif %}

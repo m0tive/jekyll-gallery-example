@@ -3,6 +3,13 @@ Jekyll Gallery Plugin Example
 
 This is the example site for the [Jekyll Gallery plugin](https://github.com/m0tive/jekyll-gallery).
 
+To host locally, do:
+
+    $ jekyll --server --base-dir="/jekyll-gallery-example/"
+
+Then navigate to `http://localhost:4000/jekyll-gallery-example/` (don't miss the
+last `/`).
+
 Author
 ------
 

@@ -1,0 +1,53 @@
+---
+layout: resetcss
+---
+
+body, select, input, textarea {color: #333;}
+
+h1 {font-size:1.6em}
+h2 {font-size:1.2em}
+h3,h4 {font-size:1.1em}
+h3,h5,h6 {font-style:italic}
+h4,h5 {font-weight:normal}
+h5 {font-size:1em}
+h6 {font-size:0.9em}
+
+h1,h2,h3,h4,h5,h6{margin:1em 0 0.3em}
+
+p{margin:0.3em 0 0.7em}
+p, li{line-height:1.36em}
+
+/*
+ol{margin:0 0 1em 2em}
+ul {margin:0 0 1em; padding-left:1.9em; text-indent: -1em}
+ul li:before { content: '-'; padding-right: 0.9em}
+*/
+
+hr {border-color: #333}
+
+pre, code, kbd, samp {font-family: "Bitstream Vera Sans Mono", Monaco, monospace, sans-serif}
+
+pre { margin:1em; font-size: 0.75em; white-space: pre-wrap }
+
+pre code { border: 1px solid #eee; display: block; padding: 1em }
+p code { font-size: 0.9em; padding:2px 1px; background: #eee; border: 1px solid #ddd}
+
+#container {margin:0 auto;width:50em} /* 50*16=800px */
+
+/* site-specific styles *
+ * **********************************************************************/
+
+#image {
+    background: #333;
+    padding: 1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    text-align: center;
+}
+
+#date { font-size: 0.8em }
+
+#nav .button { float: left; width: 16.666em; }
+#home { text-align: center }
+#next { text-align: right }
+#nav .disabled { color: #CCC }
