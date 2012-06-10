@@ -2,4 +2,4 @@
 title: Big time
 ---
 
-These fish have really hit it off
+Extra information about images, this text for example, can be included in the image's info file. See <a href="https://github.com/m0tive/jekyll-gallery#info-files">here</a> for info.
