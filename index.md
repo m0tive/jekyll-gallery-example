@@ -15,8 +15,7 @@ can be found on [github][2].
 
 ---
 
-All content and source are [MIT license][3].
-Peter Dodds 2012.
+[Peter Dodds](http://pddds.com). All content and source are [MIT license][3].
 
 [1]:https://github.com/m0tive/jekyll-gallery
 [2]:https://github.com/m0tive/jekyll-gallery-example
