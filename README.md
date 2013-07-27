@@ -5,7 +5,7 @@ This is the example site for the [Jekyll Gallery plugin](https://github.com/m0ti
 
 To host locally, do:
 
-    $ jekyll --server --base-dir="/jekyll-gallery-example/"
+    $ jekyll --server --base-url="/jekyll-gallery-example/"
 
 Then navigate to `http://localhost:4000/jekyll-gallery-example/` (don't miss the
 last `/`).
